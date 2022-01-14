@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Rubik+Beastly&display=swap');
+
+h1{
+  font-family: 'Island Moments', cursive;
+  font-size: 100px;
+}
+
 body{
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -28,6 +35,8 @@ a{
 }
 
 .sidebar a.active {
+  font-family: 'Rubik Beastly', cursive;
+  font-size: 40px;
   background-color: #9e06e8;
   color: white;
 }
