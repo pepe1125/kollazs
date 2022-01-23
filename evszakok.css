@@ -23,6 +23,7 @@ img:hover{
 p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
+    text-align: center;
     transition: 1s;
 }
 
