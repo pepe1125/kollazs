@@ -15,7 +15,7 @@
 img{
     border: 5px solid black;
     border-radius: 5%;
-    width: 90vw;
+    width: 30vw;
     margin:30px;
     transition: 1s;
 }
