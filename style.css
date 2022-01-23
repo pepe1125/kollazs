@@ -6,6 +6,12 @@ h1{
   color: blueviolet;
 }
 
+h2{
+  font-family: 'Island Moments', cursive;
+  font-size: 80px;
+  color: green;
+}
+
 body{
   margin: 0;
   font-family: "Lato", sans-serif;
