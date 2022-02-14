@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés</title>
+    <style>
+        fieldset {
+            width: 330px;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="rendeles">
+        <h1>Pizza Rendelés</h1>
+        <fieldset>
+            <legend>Vevő adatai:</legend>
+            <p><label>Név: <input type="text" name="nev">
+                    <small>Vezetéknév Keresztnév</small></label></p>
+            <p><label>Telefon: <input type="tel" name="telefon" size="10"></label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Pizza mérete</legend>
+            <p><label><input type="radio" name="meret" value="kicsi">kicsi</label></p>
+            <p><label><input type="radio" name="meret" value="nagy">nagy</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Feltétek</legend>
+            <p><label><input type="checkbox" name="feltet1" value="sonka">sonka</label></p>
+            <p><label><input type="checkbox" name="feltet2" value="sajt">sajt</label></p>
+            <p><label><input type="checkbox" name="feltet3" value="gomba">gomba</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Végezetül</legend>
+            <p><label>mennyiség: <input type="number" name="mennyiseg"> db</label></p>
+            <p><label>egyéb kívánságok: <textarea name="egyeb"></textarea></label></p>
+            <p><label>Kért szállítási idő: <input type="time" name="kiszallitas"></label></p>
+            <br>
+            <input type="reset" name="visszaallitas">
+            <input type="submit" name="kuldes">
+        </fieldset>
+    </form>
+</body>
+
+</html>
