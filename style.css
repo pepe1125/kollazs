@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Rubik+Beastly&display=swap');
 
+fieldset {
+ width: 330px;
+}
+
 .footer {
    position: fixed;
    left: 0;
