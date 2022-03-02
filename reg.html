@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reg</title>
+</head>
+
+<body>
+
+    <input type="text" id="email_cim" placeholder="email">
+    <br>
+    <input type="password" id="pass1" placeholder="jelszó1">
+    <br>
+    <input type="password" id="pass2" placeholder="jelszó2">
+    <br>
+    <button onclick="regist(email_cim.value, pass1.value, pass2.value)">Reg.</button>
+
+    <script>
+        function regist(cim, jel1, jel2) {
+            if (cim != "") {
+                if (jel1 == jel2) {
+                    localStorage.setItem(cim, jel1)
+                    alert("Regisztrálva!")
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

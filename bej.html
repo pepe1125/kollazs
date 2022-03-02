@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+</head>
+
+<body>
+
+    <fieldset id="piri" style="width: 0%;">
+        <input type="text" id="user" placeholder="Felh.">
+        <br>
+        <input type="password" id="pass" placeholder="Jelsz.">
+        <br>
+        <button onclick="belep(user.value, pass.value)">OK</button>
+    </fieldset>
+    <br>
+
+    <button onclick="document.body.style.backgroundColor = 'lightgreen'">világos zöld</button>
+    <button onclick="document.body.style.backgroundColor = 'darkgreen'">sötét zöld</button>
+    <br><br>
+    <button onclick="szinez()">Fieldset szín</button>
+    <button onclick="beir(user.value, pass.value)"> beír</button>
+    <button onclick="listaz()">Felhasználók kilistázása:</button>
+    <h1 id="siker"></h1>
+    <p id="lista"></p>
+
+    <script>
+
+        function listaz() {
+            var kk=""
+            for (i = 0; i < localStorage.length; i++) {
+                key = localStorage.key(i);
+                kk += ("<li>email:" + key + " | jelszó:" + localStorage.getItem(key) + "</li>");
+            }
+            document.getElementById("lista").innerHTML = kk
+        }
+
+        function beir(felh, jelsz) {
+            localStorage.setItem(felh, jelsz)
+        }
+
+        function szinez() {
+            document.getElementById('piri').style.backgroundColor = 'lightgrey'
+        }
+        function belep(username, password) {
+            if (username == "sp") {
+                if (password == "asdasd") {
+                    alert("BELÉPÉS ENGEDÉLYEZVE :)")
+                    window.open('https://pepe1125.github.io/kollazs')
+                }
+            }
+            else {
+                document.getElementById("siker").innerHTML = "Nincs ilyen felhasználó"
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
