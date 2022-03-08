@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomb</title>
+    <style>
+        body{
+            background-color: black;
+            color: aqua;
+            text-align: center;
+        }
+        .mezo{
+            border: 2px solid rgb(90, 10, 39);
+            width: 400px;
+            height: 40px;
+            background-color: rgb(43, 36, 36);
+            color: rgb(255, 255, 255);
+            border-radius: 8px;
+            margin: 5px;
+            transition: 0.75s;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        .mezo:hover{
+            transform: scale(1.2);
+            border: 4px solid white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Regisztráció</h1>
+
+    <form action="">
+        <input class="mezo" style="margin-top: 20px;" type="text" id="" placeholder="neved"><br>
+        <input class="mezo" type="email" id="" placeholder="email címed"><br>
+        <input class="mezo" type="password" name="" id="" placeholder="jelszó"><br>
+        <input class="mezo" type="password" name="" id="" placeholder="jelszó megerősétés"><br>
+
+        <label for="aszf">ÁSZF elfogadása </label>        
+        <input type="checkbox" name="aszf" id="" checked><br>
+
+        <label for="fiu">fiú</label>
+        <input type="radio" name="neme" id="" value="fiu">
+        <label for="lany">lány</label>
+        <input type="radio" name="neme" id="" value="lany"><br>
+
+        <input type="submit" value="regisztráció" onclick="reg()"> <br>
+        <input type="reset" value="mégsem">
+    </form>
+
+
+
+
+
+</body>
+
+</html>

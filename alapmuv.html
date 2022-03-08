@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+    <style>
+        .but {
+            width: 77px;
+        }
+        .inp {
+            width: 220px;
+        }
+        fieldset{
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Alap Számológép</legend>
+        <form action="javascript:void(0);">
+            <input class="inp" type="number" name="nbr" id="x_ert" placeholder="x érték" required><br>
+            <input class="inp" type="number" name="nbr" id="y_ert" placeholder="y érték" required><br>
+            <input class="but" type="button" value="Összeadás" onclick="osszead()"> <input type="text" id="ossz" readonly>
+            <br>
+            <input class="but" type="button" value="Kivonás" onclick="kivon()"> <input type="text" id="kiv" readonly> <br>
+            <input class="but" type="button" value="Szorzás" onclick="szorz()"> <input type="text" id="szor" readonly> <br>
+            <input class="but" type="button" value="Osztás" onclick="oszt()"> <input type="text" id="osztas" readonly> <br>
+            <input class="but" type="submit" name="sub" id="subm" value="SZÁMOLD KI MINDET!" onclick="osszead();kivon();szorz();oszt()">
+        </form>
+    </fieldset>
+    <script>
+        function osszead() {
+            ossz.value = (Number(x_ert.value) + Number(y_ert.value))
+        }
+
+        function kivon(x, y) {
+            kiv.value = (Number(x_ert.value) - Number(y_ert.value))
+        }
+
+        function szorz(x, y) {
+            szor.value = (Number(x_ert.value) * Number(y_ert.value)).toFixed(2)
+        }
+
+        function oszt(x, y) {
+            osztas.value = (Number(x_ert.value) / Number(y_ert.value)).toFixed(2)
+        }
+    </script>
+
+</body>
+
+</html>
