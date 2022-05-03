@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosár</title>
+    <script src="javascript.js"></script>
+    <style>
+       img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Add a kosárhoz amelyik tetszik!</h1>
+
+    <button onclick="hozzaad('termek01')">
+        <img src="https://imageio.forbes.com/specials-images/imageserve/5fc543916bad21b61666e772/Cybercrime--A-hacker-typing-on-a-keyboard-/960x0.jpg?fit=bounds&format=jpg&width=960"
+            alt="hack01">
+        <br> Termék01</button>
+    <button onclick="hozzaad('termek02')"> <img
+            src="https://kriptoakademia.com/wp-content/uploads/2022/01/cdchack03.jpg" alt="hack02">
+        <br> Termék02</button>
+    <button onclick="hozzaad('termek03')"> <img
+            src="https://online.stanford.edu/sites/default/files/styles/embedded_large/public/2019-07/hack-lab_INTLPOL268.jpg?itok=9wwhRzbR"
+            alt="hack03">
+        <br> Termék03</button>
+    <br> <br>
+    <button onclick="torles()">TÖRLÉS</button>
+
+    <button onclick="kos()">KOSÁR TARTALMA:</button>
+
+    <br><br>
+
+    <table border="2px" id="tabla"></table>
+        
+    <br><br>
+    <button onclick=" termekek() ">Termék darabszáma</button>
+    <p id="darabszam"></p>
+
+
+</body>
+
+</html>
